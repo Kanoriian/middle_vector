@@ -19,13 +19,13 @@ string itc_join(vector <char> lst, string sep){ //2
 }
 
 string itc_rmstrspc(string str){ //3
-    string stroka;
+    string qr;
     for(int i = 0; i < str.size(); i++){
         if(str[i] != ' '){
-            stroka += str[i];
+            qr += str[i];
         }
     }
-    return stroka;
+    return qr;
 }
 
 string itc_rmstrchar(string str, string ls){ //4
