@@ -11,11 +11,11 @@ vector <char> itc_strtlist(string str){ //1
 }
 
 string itc_join(vector <char> lst, string sep){ //2
-    string str;
-    for(int i = 0; i < str.size(); i++){
-        str += mass[i] + sep;
+    string qer = "";
+    for(int i = 0; i < lst.size(); i++){
+        qer += lst[i] + sep;
     }
-    return mass;
+    return qer;
 }
 
 string itc_rmstrspc(string str){ //3
