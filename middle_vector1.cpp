@@ -5,7 +5,7 @@ using namespace std;
 vector <char> itc_strtlist(string str){ //1
     vector <char> mass;
     for(int i = 0; i < str.size(); i++){
-        mass[i] = str[i];
+        mass.push_back(str[i]);
     }
     return mass;
 }
