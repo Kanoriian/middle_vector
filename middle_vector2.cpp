@@ -21,20 +21,26 @@ long itc_sum_even_part_lst(const vector <int> &lst){ //7
 }
 
 
-void itc_odd_even_separator_lst(const vector <int> &lst, vector <int> &lst1, vector <int> &lst2){ // 8
-    long a = 0, b = 0;
-    for(long i = 0; i < lst.size(); i++){
-        if(lst[i] % 2 == 0){
-            lst1[a] = lst[i];
-            a++;
-        }else{
-            lst2[b] = lst[i];
-            b++;
-        }
+void itc_odd_even_separator_lst(const vector<int> &lst, vector<int> &lst1, vector<int> &lst2) { // 8
+  if(lst.size() == 0){
+    return;
+  }
+  long a = 0, b = 0;
+  for (long i = 0; i < lst.size(); i++) {
+    if (lst[i] % 2 == 0) {
+      lst1[a] = lst[i];
+      a++;
+    } else {
+      lst2[b] = lst[i];
+      b++;
     }
+  }
 }
 
 void itc_pos_neg_separator_lst(const vector <int> &lst, vector <int> &lst1, vector <int> &lst2, vector <int> &lst3){ //9
+    if(lst.size() == 0){
+    return;
+    }
     long a = 0, b = 0, c = 0;
     for(int i = 0; i < lst.size(); i++){
         if(lst[i] < 0){
