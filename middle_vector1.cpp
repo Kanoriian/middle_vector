@@ -17,7 +17,7 @@ string itc_join(vector<char> lst, string sep) { // 2
     qer += sep;
   }
   string qert = "";
-  for(int i = 0; i < qer.size()-1; i++){
+  for (int i = 0; i < qer.size()-sep.size(); i++) {
     qert += qer[i];
   }
   return qert;
