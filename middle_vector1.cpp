@@ -16,8 +16,11 @@ string itc_join(vector<char> lst, string sep) { // 2
     qer += lst[i];
     qer += sep;
   }
-  qer.pop_back();
-  return qer;
+  string qert = "";
+  for(int i = 0; i < qer.size()-1; i++){
+    qert += qer[i];
+  }
+  return qert;
 }
 
 string itc_rmstrspc(string str){ //3
